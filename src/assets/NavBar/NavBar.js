@@ -7,7 +7,15 @@ export function NavBar(props){
     <div className='iron'>
         <h1 >Iron Nutrition</h1>
     </div>
-    <input className='navbar' placeholder='search for a food' ></input>
+    <input 
+    className='navbar' 
+    type= 'text'
+    placeholder='search for a food'
+    onKeyUp={(event) => {
+        props.filterState(event.target.value);
+    }} 
+
+    /> 
     </>
     )
 }

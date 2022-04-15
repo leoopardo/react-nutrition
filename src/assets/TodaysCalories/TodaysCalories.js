@@ -3,9 +3,14 @@ import React from 'react'
 export function TodaysCalories(props){
     return(
         <>
-            <ul>
-                <li>{props.quantity} {props.name} = {props.calories}</li>
-            </ul>
+        <h1>Today's Food</h1>
+        <ul>
+            {props.todays.map((currentFood) => {
+            return(
+                 <li>{`${currentFood.quantity} ${currentFood.name} = ${currentFood.calories} cal`}</li>
+            ) 
+            })}    
+        </ul>
         </>
     )
 }
