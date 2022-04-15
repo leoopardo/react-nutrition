@@ -14,17 +14,17 @@ export function FoodBox(props){
             <div className="content">
                 <p>
                 <strong>{props.name}</strong> <br />
-                <small>{props.calories}</small>
+                <small>{props.calories} cal</small>
                 </p>
             </div>
             </div>
             <div className="media-right">
             <div className="field has-addons">
                 <div className="control">
-                <input className="input" type="number" value={props.quantity.toString()} />
+                <input className="input" type="number" value={1} />
                 </div>
                 <div className="control">
-                <button className="button is-info">
+                <button className="button is-info" >
                     +
                 </button>
                 </div>

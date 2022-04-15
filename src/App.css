@@ -20,8 +20,9 @@
 .foods{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  width: 450px;
+  align-items: center;
+  margin-left: 8%;
+  width: 500px;
+  border: 2px solid black;
 }
 

@@ -4,6 +4,7 @@ import 'bulma/css/bulma.css';
 import { FoodBox } from './assets/FoodBox/FoodBox';
 import { NavBar } from './assets/NavBar/NavBar';
 import foods from './foods.json';
+import { TodaysCalories } from './assets/TodaysCalories/TodaysCalories';
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
           calories={foods.calories}
           quantity={foods.quantity}
       />)}
+      </div>
+      <div>
+        <TodaysCalories />
       </div>
     </div>
   );
